@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
   <meta charset="UTF-8">
 
   <meta
@@ -8,21 +10,133 @@
     content="width=device-width, initial-scale=1.0"
   >
 
-  <title>
-    Praxis Group | Excelência Operacional, Processos, Dados e Treinamentos
-  </title>
-  <link rel="icon" type="image/png" href="/favicon-praxis.png">
-  <link rel="shortcut icon" type="image/png" href="/favicon-praxis.png">
+  <!-- ======================================================
+       SEO PRINCIPAL
+  ======================================================= -->
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Praxis Group | Excelência Operacional, Processos, Dados e Treinamentos</title>
+
+  <meta
+    name="description"
+    content="A Praxis Group oferece soluções em excelência operacional, gestão de processos, indicadores, análise de dados e treinamentos para empresas e profissionais."
+  >
+
+  <meta
+    name="robots"
+    content="index, follow"
+  >
+
+  <meta
+    name="author"
+    content="Praxis Group"
+  >
+
+  <link
+    rel="canonical"
+    href="https://praxisgp.com.br/"
+  >
+
+
+  <!-- ======================================================
+       FAVICON
+  ======================================================= -->
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="/favicon-praxis.png"
+  >
+
+  <link
+    rel="shortcut icon"
+    type="image/png"
+    href="/favicon-praxis.png"
+  >
+
+
+  <!-- ======================================================
+       OPEN GRAPH
+       LinkedIn, WhatsApp e outras redes sociais
+  ======================================================= -->
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:locale"
+    content="pt_BR"
+  >
+
+  <meta
+    property="og:site_name"
+    content="Praxis Group"
+  >
+
+  <meta
+    property="og:title"
+    content="Praxis Group | Excelência Operacional, Processos, Dados e Treinamentos"
+  >
+
+  <meta
+    property="og:description"
+    content="Transformamos estratégia, processos e dados em decisões e resultados sustentáveis."
+  >
+
+  <meta
+    property="og:url"
+    content="https://praxisgp.com.br/"
+  >
+
+  <meta
+    property="og:image"
+    content="https://praxisgp.com.br/praxis-social.png"
+  >
+
+  <meta
+    property="og:image:width"
+    content="1200"
+  >
+
+  <meta
+    property="og:image:height"
+    content="630"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="Praxis Group - Excelência Operacional, Processos, Dados e Treinamentos"
+  >
+
+
+  <!-- ======================================================
+       FONTES
+  ======================================================= -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
 
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   >
 
+
+  <!-- ======================================================
+       CSS
+  ======================================================= -->
+
   <style>
+
     :root {
       --azul-principal: #111D66;
       --azul-secundario: #454F74;
@@ -32,15 +146,18 @@
       --texto: #202020;
     }
 
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
+
     html {
       scroll-behavior: smooth;
     }
+
 
     body {
       font-family: 'Montserrat', sans-serif;
@@ -49,16 +166,21 @@
       line-height: 1.6;
     }
 
+
     a {
       text-decoration: none;
     }
+
 
     .container {
       width: min(1120px, 90%);
       margin: 0 auto;
     }
 
-    /* MENU */
+
+    /* ======================================================
+       MENU
+    ======================================================= */
 
     header {
       background-color: var(--azul-principal);
@@ -68,6 +190,7 @@
       box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     }
 
+
     .navbar {
       min-height: 76px;
       display: flex;
@@ -76,28 +199,34 @@
       gap: 30px;
     }
 
+
     .brand {
       color: var(--branco);
       font-size: 1.25rem;
       font-weight: 800;
       letter-spacing: 1px;
     }
-    .brand a {
-  display: flex;
-  align-items: center;
-}
 
-.brand img {
-  height: 70px;
-  width: auto;
-  display: block;
-}
+
+    .brand a {
+      display: flex;
+      align-items: center;
+    }
+
+
+    .brand img {
+      height: 70px;
+      width: auto;
+      display: block;
+    }
+
 
     nav {
       display: flex;
       gap: 26px;
       flex-wrap: wrap;
     }
+
 
     nav a {
       color: var(--branco);
@@ -106,11 +235,15 @@
       transition: 0.2s;
     }
 
+
     nav a:hover {
       color: var(--coral);
     }
 
-    /* HERO */
+
+    /* ======================================================
+       HERO
+    ======================================================= */
 
     .hero {
       background:
@@ -119,13 +252,16 @@
           rgba(17,29,102,0.98),
           rgba(69,79,116,0.95)
         );
+
       color: var(--branco);
       padding: 110px 0;
     }
 
+
     .hero-content {
       max-width: 800px;
     }
+
 
     .hero-small {
       color: var(--coral);
@@ -136,11 +272,13 @@
       margin-bottom: 15px;
     }
 
+
     .hero h1 {
       font-size: clamp(2.5rem, 6vw, 4.5rem);
       line-height: 1.08;
       margin-bottom: 22px;
     }
+
 
     .hero h2 {
       font-size: clamp(1.35rem, 3vw, 2rem);
@@ -149,6 +287,7 @@
       margin-bottom: 22px;
     }
 
+
     .hero p {
       max-width: 720px;
       font-size: 1.05rem;
@@ -156,11 +295,17 @@
       margin-bottom: 35px;
     }
 
+
     .hero-buttons {
       display: flex;
       gap: 15px;
       flex-wrap: wrap;
     }
+
+
+    /* ======================================================
+       BOTÕES
+    ======================================================= */
 
     .btn {
       display: inline-block;
@@ -170,40 +315,50 @@
       transition: 0.2s ease;
     }
 
+
     .btn-primary {
       background-color: var(--coral);
       color: var(--azul-principal);
     }
+
 
     .btn-primary:hover {
       transform: translateY(-2px);
       opacity: 0.92;
     }
 
+
     .btn-secondary {
       border: 2px solid var(--branco);
       color: var(--branco);
     }
+
 
     .btn-secondary:hover {
       background-color: var(--branco);
       color: var(--azul-principal);
     }
 
-    /* SEÇÕES */
+
+    /* ======================================================
+       SEÇÕES
+    ======================================================= */
 
     section {
       padding: 90px 0;
     }
 
+
     .section-light {
       background-color: var(--off-white);
     }
+
 
     .section-title {
       text-align: center;
       margin-bottom: 50px;
     }
+
 
     .section-title span {
       color: var(--coral);
@@ -213,6 +368,7 @@
       letter-spacing: 2px;
     }
 
+
     .section-title h2 {
       color: var(--azul-principal);
       font-size: clamp(2rem, 4vw, 2.8rem);
@@ -220,13 +376,17 @@
       margin-bottom: 14px;
     }
 
+
     .section-title p {
       max-width: 760px;
       margin: 0 auto;
       color: #555;
     }
 
-    /* SOBRE */
+
+    /* ======================================================
+       QUEM SOMOS
+    ======================================================= */
 
     .about {
       max-width: 900px;
@@ -235,13 +395,17 @@
       font-size: 1.05rem;
     }
 
-    /* CARDS */
+
+    /* ======================================================
+       SOLUÇÕES
+    ======================================================= */
 
     .cards {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 22px;
     }
+
 
     .card {
       background-color: var(--branco);
@@ -251,18 +415,23 @@
       border-top: 4px solid var(--coral);
     }
 
+
     .card h3 {
       color: var(--azul-principal);
       margin-bottom: 14px;
       font-size: 1.15rem;
     }
 
+
     .card p {
       color: #555;
       font-size: 0.94rem;
     }
 
-    /* TREINAMENTOS */
+
+    /* ======================================================
+       TREINAMENTOS
+    ======================================================= */
 
     .training-box {
       background-color: var(--azul-principal);
@@ -274,10 +443,12 @@
       margin: 0 auto;
     }
 
+
     .training-box h2 {
       font-size: clamp(2rem, 4vw, 2.8rem);
       margin-bottom: 18px;
     }
+
 
     .training-box p {
       max-width: 720px;
@@ -285,7 +456,10 @@
       color: #e9e9e9;
     }
 
-    /* DIFERENCIAIS */
+
+    /* ======================================================
+       DIFERENCIAIS
+    ======================================================= */
 
     .benefits {
       display: grid;
@@ -293,10 +467,12 @@
       gap: 30px;
     }
 
+
     .benefit {
       text-align: center;
       padding: 20px;
     }
+
 
     .benefit-number {
       font-size: 2.6rem;
@@ -304,12 +480,16 @@
       color: var(--coral);
     }
 
+
     .benefit h3 {
       color: var(--azul-principal);
       margin: 5px 0 10px;
     }
 
-    /* CONTATO */
+
+    /* ======================================================
+       CONTATO
+    ======================================================= */
 
     .contact {
       background-color: var(--azul-secundario);
@@ -317,15 +497,18 @@
       text-align: center;
     }
 
+
     .contact h2 {
       font-size: clamp(2rem, 4vw, 2.8rem);
       margin-bottom: 16px;
     }
 
+
     .contact p {
       max-width: 720px;
       margin: 0 auto 32px;
     }
+
 
     .social-buttons {
       display: flex;
@@ -333,6 +516,7 @@
       flex-wrap: wrap;
       gap: 15px;
     }
+
 
     .social-button {
       background-color: var(--branco);
@@ -343,11 +527,15 @@
       transition: 0.2s;
     }
 
+
     .social-button:hover {
       background-color: var(--coral);
     }
 
-    /* RODAPÉ */
+
+    /* ======================================================
+       RODAPÉ
+    ======================================================= */
 
     footer {
       background-color: #09133f;
@@ -357,422 +545,560 @@
       font-size: 0.86rem;
     }
 
+
     footer strong {
       color: var(--branco);
     }
 
-    /* RESPONSIVO */
+
+    /* ======================================================
+       RESPONSIVIDADE
+    ======================================================= */
 
     @media (max-width: 900px) {
+
       .cards {
         grid-template-columns: repeat(2, 1fr);
       }
 
+
       .benefits {
         grid-template-columns: 1fr;
       }
+
 
       .navbar {
         flex-direction: column;
         padding: 20px 0;
       }
 
+
       nav {
         justify-content: center;
       }
+
     }
 
+
     @media (max-width: 600px) {
+
       .cards {
         grid-template-columns: 1fr;
       }
+
 
       nav {
         gap: 13px;
       }
 
+
       .hero {
         padding: 80px 0;
       }
+
 
       section {
         padding: 65px 0;
       }
 
+
       .training-box {
         padding: 38px 22px;
       }
+
     }
+
   </style>
+
 </head>
+
 
 <body>
 
-<header>
-  <div class="container navbar">
 
-    <div class="brand">
-  <a href="#inicio">
-    <img src="logo-praxis.png" alt="Praxis Group">
-  </a>
-</div>
+  <!-- ======================================================
+       CABEÇALHO
+  ======================================================= -->
 
-    <nav>
-      <a href="#inicio">Início</a>
-      <a href="#sobre">Quem somos</a>
-      <a href="#solucoes">Soluções</a>
-      <a href="#treinamentos">Treinamentos</a>
-      <a href="#contato">Contato</a>
-    </nav>
+  <header>
 
-  </div>
-</header>
+    <div class="container navbar">
 
+      <div class="brand">
 
-<main>
+        <a href="#inicio">
 
-  <!-- HERO -->
+          <img
+            src="logo-praxis.png"
+            alt="Praxis Group"
+          >
 
-  <section class="hero" id="inicio">
-
-    <div class="container hero-content">
-
-      <div class="hero-small">
-        Gestão • Processos • Dados • Desenvolvimento
-      </div>
-
-      <h1>
-        Praxis Group
-      </h1>
-
-      <h2>
-        Transformando estratégia em resultados sustentáveis.
-      </h2>
-
-      <p>
-        Ajudamos empresas e profissionais a estruturar processos,
-        desenvolver competências e transformar dados em decisões
-        que geram resultados.
-      </p>
-
-      <div class="hero-buttons">
-
-       <a
-  class="btn btn-primary"
-  href="#treinamentos"
->
-  Conheça nossos treinamentos
-</a>
-
-        <a
-          class="btn btn-secondary"
-          href="https://wa.me/5519991279103"
-          target="_blank"
-          rel="noopener"
-        >
-          Fale conosco
         </a>
 
       </div>
 
+
+      <nav>
+
+        <a href="#inicio">
+          Início
+        </a>
+
+        <a href="#sobre">
+          Quem somos
+        </a>
+
+        <a href="#solucoes">
+          Soluções
+        </a>
+
+        <a href="#treinamentos">
+          Treinamentos
+        </a>
+
+        <a href="#contato">
+          Contato
+        </a>
+
+      </nav>
+
     </div>
 
-  </section>
+  </header>
 
 
-  <!-- QUEM SOMOS -->
+  <main>
 
-  <section id="sobre">
 
-    <div class="container">
+    <!-- ====================================================
+         HERO
+    ===================================================== -->
 
-      <div class="section-title">
+    <section
+      class="hero"
+      id="inicio"
+    >
 
-        <span>Praxis Group</span>
+      <div class="container hero-content">
+
+        <div class="hero-small">
+          Gestão • Processos • Dados • Desenvolvimento
+        </div>
+
+
+        <h1>
+          Praxis Group
+        </h1>
+
 
         <h2>
-          Estratégia que se transforma em execução
+          Transformando estratégia em resultados sustentáveis.
         </h2>
 
-      </div>
-
-      <div class="about">
 
         <p>
-          A Praxis Group atua na organização e melhoria de processos,
-          desenvolvimento profissional e utilização de dados para apoiar
-          decisões mais eficientes.
+          Ajudamos empresas e profissionais a estruturar processos,
+          desenvolver competências e transformar dados em decisões
+          que geram resultados.
         </p>
 
-        <br>
 
-        <p>
-          Unimos gestão, conhecimento técnico e inteligência aplicada
-          para apoiar empresas e profissionais na busca por produtividade,
-          desenvolvimento e resultados sustentáveis.
-        </p>
+        <div class="hero-buttons">
+
+          <a
+            class="btn btn-primary"
+            href="#treinamentos"
+          >
+            Conheça nossos treinamentos
+          </a>
+
+
+          <a
+            class="btn btn-secondary"
+            href="https://wa.me/5519991279103"
+            target="_blank"
+            rel="noopener"
+          >
+            Fale conosco
+          </a>
+
+        </div>
 
       </div>
 
-    </div>
-
-  </section>
+    </section>
 
 
-  <!-- SOLUÇÕES -->
+    <!-- ====================================================
+         QUEM SOMOS
+    ===================================================== -->
 
-  <section class="section-light" id="solucoes">
+    <section id="sobre">
 
-    <div class="container">
+      <div class="container">
 
-      <div class="section-title">
+        <div class="section-title">
 
-        <span>O que fazemos</span>
+          <span>
+            Praxis Group
+          </span>
+
+          <h2>
+            Estratégia que se transforma em execução
+          </h2>
+
+        </div>
+
+
+        <div class="about">
+
+          <p>
+            A Praxis Group atua na organização e melhoria de processos,
+            desenvolvimento profissional e utilização de dados para apoiar
+            decisões mais eficientes.
+          </p>
+
+          <br>
+
+          <p>
+            Unimos gestão, conhecimento técnico e inteligência aplicada
+            para apoiar empresas e profissionais na busca por produtividade,
+            desenvolvimento e resultados sustentáveis.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ====================================================
+         SOLUÇÕES
+    ===================================================== -->
+
+    <section
+      class="section-light"
+      id="solucoes"
+    >
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <span>
+            O que fazemos
+          </span>
+
+          <h2>
+            Nossas soluções
+          </h2>
+
+          <p>
+            Conhecimento aplicado aos desafios reais de empresas e profissionais.
+          </p>
+
+        </div>
+
+
+        <div class="cards">
+
+
+          <div class="card">
+
+            <h3>
+              Gestão e Processos
+            </h3>
+
+            <p>
+              Estruturação, padronização e melhoria de processos para
+              aumentar eficiência, organização e previsibilidade.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <h3>
+              Excelência Operacional
+            </h3>
+
+            <p>
+              Melhoria contínua, produtividade, indicadores e práticas
+              orientadas à geração de resultados sustentáveis.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <h3>
+              Dados e Indicadores
+            </h3>
+
+            <p>
+              Organização de informações, criação de indicadores e
+              transformação de dados em suporte à tomada de decisão.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <h3>
+              Treinamentos
+            </h3>
+
+            <p>
+              Conteúdos voltados ao desenvolvimento profissional,
+              gestão, processos, melhoria contínua e tecnologias aplicadas.
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ====================================================
+         TREINAMENTOS
+    ===================================================== -->
+
+    <section id="treinamentos">
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <span>
+            Desenvolvimento profissional
+          </span>
+
+          <h2>
+            Treinamentos Praxis
+          </h2>
+
+          <p>
+            Conteúdos desenvolvidos para transformar conhecimento
+            em aplicação prática no ambiente profissional.
+          </p>
+
+        </div>
+
+
+        <div class="training-box">
+
+          <h2>
+            Documentação Técnica Profissional no Word
+          </h2>
+
+
+          <p>
+            Aprenda, passo a passo, a criar documentações técnicas
+            estruturadas, padronizadas e profissionais utilizando
+            os recursos do Microsoft Word.
+          </p>
+
+
+          <p>
+            Um treinamento voltado a analistas, engenheiros,
+            desenvolvedores e profissionais que precisam produzir
+            documentos técnicos com maior organização, clareza
+            e qualidade profissional.
+          </p>
+
+
+          <a
+            class="btn btn-primary"
+            href="https://go.hotmart.com/I107274911G"
+            target="_blank"
+            rel="noopener"
+          >
+            Conhecer treinamento
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ====================================================
+         DIFERENCIAIS
+    ===================================================== -->
+
+    <section class="section-light">
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <span>
+            Nossa abordagem
+          </span>
+
+          <h2>
+            Conhecimento que gera aplicação
+          </h2>
+
+        </div>
+
+
+        <div class="benefits">
+
+
+          <div class="benefit">
+
+            <div class="benefit-number">
+              01
+            </div>
+
+            <h3>
+              Praticidade
+            </h3>
+
+            <p>
+              Conceitos aplicados aos desafios encontrados no ambiente profissional.
+            </p>
+
+          </div>
+
+
+          <div class="benefit">
+
+            <div class="benefit-number">
+              02
+            </div>
+
+            <h3>
+              Gestão orientada por dados
+            </h3>
+
+            <p>
+              Decisões sustentadas por indicadores, análises e evidências.
+            </p>
+
+          </div>
+
+
+          <div class="benefit">
+
+            <div class="benefit-number">
+              03
+            </div>
+
+            <h3>
+              Foco em resultados
+            </h3>
+
+            <p>
+              Processos e conhecimento direcionados à melhoria efetiva da performance.
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ====================================================
+         CONTATO
+    ===================================================== -->
+
+    <section
+      class="contact"
+      id="contato"
+    >
+
+      <div class="container">
 
         <h2>
-          Nossas soluções
+          Vamos conversar?
         </h2>
+
 
         <p>
-          Conhecimento aplicado aos desafios reais de empresas e profissionais.
+          Conheça nossos conteúdos, treinamentos e soluções ou entre
+          em contato diretamente com a Praxis Group.
         </p>
 
-      </div>
 
-      <div class="cards">
-
-        <div class="card">
-          <h3>Gestão e Processos</h3>
-          <p>
-            Estruturação, padronização e melhoria de processos para
-            aumentar eficiência, organização e previsibilidade.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Excelência Operacional</h3>
-          <p>
-            Melhoria contínua, produtividade, indicadores e práticas
-            orientadas à geração de resultados sustentáveis.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Dados e Indicadores</h3>
-          <p>
-            Organização de informações, criação de indicadores e
-            transformação de dados em suporte à tomada de decisão.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Treinamentos</h3>
-          <p>
-            Conteúdos voltados ao desenvolvimento profissional,
-            gestão, processos, melhoria contínua e tecnologias aplicadas.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
+        <div class="social-buttons">
 
 
-  <!-- TREINAMENTOS -->
-
- <!-- TREINAMENTOS -->
-
-<section id="treinamentos">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <span>Desenvolvimento profissional</span>
-
-      <h2>
-        Treinamentos Praxis
-      </h2>
-
-      <p>
-        Conteúdos desenvolvidos para transformar conhecimento
-        em aplicação prática no ambiente profissional.
-      </p>
-
-    </div>
+          <a
+            class="social-button"
+            href="https://wa.me/5519991279103"
+            target="_blank"
+            rel="noopener"
+          >
+            WhatsApp
+          </a>
 
 
-    <div class="training-box">
+          <a
+            class="social-button"
+            href="https://www.linkedin.com/company/praxisgp/"
+            target="_blank"
+            rel="noopener"
+          >
+            LinkedIn
+          </a>
 
-      <h2>
-        Documentação Técnica Profissional no Word
-      </h2>
 
-      <p>
-        Aprenda, passo a passo, a criar documentações técnicas
-        estruturadas, padronizadas e profissionais utilizando
-        os recursos do Microsoft Word.
-      </p>
+          <a
+            class="social-button"
+            href="https://www.instagram.com/praxis_gp/"
+            target="_blank"
+            rel="noopener"
+          >
+            Instagram
+          </a>
 
-      <p>
-        Um treinamento voltado a analistas, engenheiros,
-        desenvolvedores e profissionais que precisam produzir
-        documentos técnicos com maior organização, clareza
-        e qualidade profissional.
-      </p>
-
-      <a
-        class="btn btn-primary"
-        href="https://go.hotmart.com/I107274911G"
-        target="_blank"
-        rel="noopener"
-      >
-        Conhecer treinamento
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-  
-  <!-- DIFERENCIAIS -->
-
-  <section class="section-light">
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <span>Nossa abordagem</span>
-
-        <h2>
-          Conhecimento que gera aplicação
-        </h2>
-
-      </div>
-
-      <div class="benefits">
-
-        <div class="benefit">
-
-          <div class="benefit-number">
-            01
-          </div>
-
-          <h3>Praticidade</h3>
-
-          <p>
-            Conceitos aplicados aos desafios encontrados no ambiente profissional.
-          </p>
-
-        </div>
-
-        <div class="benefit">
-
-          <div class="benefit-number">
-            02
-          </div>
-
-          <h3>Gestão orientada por dados</h3>
-
-          <p>
-            Decisões sustentadas por indicadores, análises e evidências.
-          </p>
-
-        </div>
-
-        <div class="benefit">
-
-          <div class="benefit-number">
-            03
-          </div>
-
-          <h3>Foco em resultados</h3>
-
-          <p>
-            Processos e conhecimento direcionados à melhoria efetiva da performance.
-          </p>
 
         </div>
 
       </div>
 
-    </div>
-
-  </section>
+    </section>
 
 
-  <!-- CONTATO -->
-
-  <section class="contact" id="contato">
-
-    <div class="container">
-
-      <h2>
-        Vamos conversar?
-      </h2>
-
-      <p>
-        Conheça nossos conteúdos, treinamentos e soluções ou entre
-        em contato diretamente com a Praxis Group.
-      </p>
-
-      <div class="social-buttons">
-
-        <a
-          class="social-button"
-          href="https://wa.me/5519991279103"
-          target="_blank"
-          rel="noopener"
-        >
-          WhatsApp
-        </a>
-
-        <a
-          class="social-button"
-          href="https://www.linkedin.com/company/praxisgp/"
-          target="_blank"
-          rel="noopener"
-        >
-          LinkedIn
-        </a>
-
-        <a
-          class="social-button"
-          href="https://www.instagram.com/praxis_gp/"
-          target="_blank"
-          rel="noopener"
-        >
-          Instagram
-        </a>
-        
-      </div>
-
-    </div>
-
-  </section>
-
-</main>
+  </main>
 
 
-<footer>
+  <!-- ======================================================
+       RODAPÉ
+  ======================================================= -->
 
-  <strong>
-    PRAXIS GROUP
-  </strong>
+  <footer>
 
-  <br>
+    <strong>
+      PRAXIS GROUP
+    </strong>
 
-  Treinamento Profissional e Gerencial Ltda.
+    <br>
 
-  <br>
+    Treinamento Profissional e Gerencial Ltda.
 
-  © 2026 Praxis Group. Todos os direitos reservados.
+    <br>
 
-</footer>
+    © 2026 Praxis Group. Todos os direitos reservados.
+
+  </footer>
+
 
 </body>
+
 </html>
