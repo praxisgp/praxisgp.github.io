@@ -484,7 +484,26 @@
     .card p {
       color: #555;
       font-size: 0.94rem;
-    }
+    }.card-link {
+  display: block;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.card-link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+}
+
+
+.card-cta {
+  display: inline-block;
+  margin-top: 18px;
+  color: var(--azul-principal);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
 
 
     /* ======================================================
@@ -912,20 +931,26 @@
           </div>
 
 
-          <div class="card">
+          <a
+  href="/excelencia-operacional/"
+  class="card card-link"
+>
 
-            <h3>
-              Excelência Operacional e Melhoria Contínua
-            </h3>
+  <h3>
+    Excelência Operacional e Melhoria Contínua
+  </h3>
 
-            <p>
-              Aplicação prática de princípios de melhoria contínua,
-              Lean Manufacturing, análise de perdas e gestão da rotina
-              para aumentar produtividade e estabilidade dos processos.
-            </p>
+  <p>
+    Aplicação prática de princípios de melhoria contínua,
+    Lean Manufacturing, análise de perdas e gestão da rotina
+    para aumentar produtividade e estabilidade dos processos.
+  </p>
 
-          </div>
+  <span class="card-cta">
+    Saiba mais →
+  </span>
 
+</a>
 
           <div class="card">
 
