@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Indicadores e KPIs para Empresas | Praxis Group</title>
+
+  <meta
+    name="description"
+    content="Implantamos indicadores e KPIs para transformar dados operacionais em informação gerencial, melhorar o controle da operação e apoiar decisões."
+  >
+
+  <link
+    rel="canonical"
+    href="https://praxisgp.com.br/indicadores-kpis/"
+  >
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta
+    property="og:title"
+    content="Indicadores e KPIs para Empresas | Praxis Group"
+  >
+  <meta
+    property="og:description"
+    content="Estruture indicadores de desempenho, KPIs, dashboards e rotinas de gestão para transformar dados em decisões e resultados."
+  >
+  <meta
+    property="og:url"
+    content="https://praxisgp.com.br/indicadores-kpis/"
+  >
+  <meta property="og:site_name" content="Praxis Group">
+
+  <style>
+    :root {
+      --azul-escuro: #111D66;
+      --azul-medio: #454F74;
+      --cinza-azulado: #9B9FAD;
+      --coral: #E5B1A2;
+      --off-white: #E7E5E4;
+      --branco: #FFFFFF;
+      --texto: #252A3A;
+      --fundo-claro: #F7F7F8;
+      --borda: #E2E4EA;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--texto);
+      background: var(--branco);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: 0 auto;
+    }
+
+    .hero {
+      background: linear-gradient(
+        135deg,
+        var(--azul-escuro),
+        var(--azul-medio)
+      );
+      color: var(--branco);
+      padding: 92px 0 88px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--coral);
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      max-width: 900px;
+      font-size: clamp(2.3rem, 5vw, 4rem);
+      line-height: 1.08;
+      margin-bottom: 22px;
+    }
+
+    .hero h2 {
+      max-width: 850px;
+      font-size: clamp(1.25rem, 2.6vw, 1.75rem);
+      font-weight: 500;
+      line-height: 1.4;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 850px;
+      font-size: 1.08rem;
+      color: #EEF0F7;
+      margin-bottom: 32px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--coral);
+      color: var(--azul-escuro);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      opacity: 0.93;
+    }
+
+    .btn-secondary {
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      color: var(--branco);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    section {
+      padding: 78px 0;
+    }
+
+    section.alt {
+      background: var(--fundo-claro);
+    }
+
+    .section-label {
+      color: var(--azul-medio);
+      font-size: 0.86rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: var(--azul-escuro);
+      font-size: clamp(1.8rem, 3vw, 2.65rem);
+      line-height: 1.2;
+      margin-bottom: 22px;
+    }
+
+    h3 {
+      color: var(--azul-escuro);
+      font-size: 1.22rem;
+      margin-bottom: 10px;
+    }
+
+    p + p {
+      margin-top: 16px;
+    }
+
+    .intro {
+      max-width: 900px;
+      font-size: 1.05rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 34px;
+    }
+
+    .card {
+      background: var(--branco);
+      border: 1px solid var(--borda);
+      border-radius: 10px;
+      padding: 28px;
+      height: 100%;
+    }
+
+    .card p {
+      color: #4E5567;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 34px;
+    }
+
+    .step {
+      border-top: 3px solid var(--coral);
+      padding-top: 20px;
+    }
+
+    .step-number {
+      display: block;
+      color: var(--cinza-azulado);
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .results {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .result-item {
+      background: var(--branco);
+      border-left: 4px solid var(--coral);
+      padding: 20px 22px;
+    }
+
+    .result-item strong {
+      display: block;
+      color: var(--azul-escuro);
+      margin-bottom: 5px;
+    }
+
+    .issues {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .issue {
+      border-bottom: 1px solid var(--borda);
+      padding-bottom: 20px;
+    }
+
+    .related {
+      background: var(--azul-escuro);
+      color: var(--branco);
+    }
+
+    .related h2 {
+      color: var(--branco);
+    }
+
+    .related .section-label {
+      color: var(--coral);
+    }
+
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .related-card {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 10px;
+      padding: 26px;
+    }
+
+    .related-card h3 {
+      color: var(--branco);
+    }
+
+    .related-card p {
+      color: #E7E9F1;
+      margin-bottom: 18px;
+    }
+
+    .related-card a {
+      color: var(--coral);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .cta {
+      text-align: center;
+      background: var(--fundo-claro);
+    }
+
+    .cta p {
+      max-width: 760px;
+      margin: 0 auto 28px;
+      font-size: 1.05rem;
+    }
+
+    footer {
+      background: #0C154F;
+      color: var(--branco);
+      padding: 42px 0;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .footer-brand strong {
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+    }
+
+    .footer-brand span {
+      color: #CDD1DF;
+      font-size: 0.92rem;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: #E5E7EF;
+      text-decoration: none;
+      font-size: 0.92rem;
+    }
+
+    .copyright {
+      width: 100%;
+      color: #AEB4C8;
+      font-size: 0.86rem;
+      margin-top: 24px;
+    }
+
+    .text-link {
+      color: var(--azul-escuro);
+      font-weight: 700;
+    }
+
+    @media (max-width: 850px) {
+      .grid,
+      .steps {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding: 68px 0 64px;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      .grid,
+      .steps,
+      .results,
+      .issues,
+      .related-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .buttons {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+
+  <!-- Schema JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Consultoria em Indicadores de Desempenho e KPIs",
+    "description": "Consultoria para definição e implantação de indicadores de desempenho, KPIs, controles gerenciais, dashboards e rotinas de gestão.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Praxis Group",
+      "url": "https://praxisgp.com.br/",
+      "sameAs": [
+        "https://www.linkedin.com/company/praxisgp/",
+        "https://www.instagram.com/praxis_gp/"
+      ]
+    },
+    "url": "https://praxisgp.com.br/indicadores-kpis/",
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Campinas"
+      },
+      {
+        "@type": "City",
+        "name": "Valinhos"
+      },
+      {
+        "@type": "City",
+        "name": "Vinhedo"
+      },
+      {
+        "@type": "City",
+        "name": "Louveira"
+      },
+      {
+        "@type": "City",
+        "name": "Itatiba"
+      },
+      {
+        "@type": "Country",
+        "name": "Brasil"
+      }
+    ],
+    "serviceType": [
+      "Indicadores de desempenho",
+      "KPIs",
+      "Gestão por indicadores",
+      "Dashboards gerenciais",
+      "Rotina de gestão"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+
+        <span class="eyebrow">
+          Indicadores • KPIs • Gestão de Resultados
+        </span>
+
+        <h1>
+          Indicadores e KPIs para uma Gestão mais Eficiente
+        </h1>
+
+        <h2>
+          Transforme objetivos e dados operacionais em indicadores claros,
+          acompanhamento estruturado e decisões melhores.
+        </h2>
+
+        <p>
+          A Praxis Group ajuda empresas a definir o que realmente precisa ser
+          medido, estruturar indicadores de desempenho e transformar números
+          em uma rotina prática de gestão e melhoria contínua.
+        </p>
+
+        <div class="buttons">
+
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/5519991279103"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Falar com a Praxis
+          </a>
+
+          <a
+            class="btn btn-secondary"
+            href="#como-atuamos"
+          >
+            Entenda como atuamos
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- PROBLEMA -->
+    <section>
+      <div class="container">
+
+        <div class="section-label">Gestão por indicadores</div>
+
+        <h2>
+          Sua empresa mede o que realmente importa?
+        </h2>
+
+        <div class="intro">
+
+          <p>
+            Ter muitos números não significa necessariamente ter controle da
+            operação. Em muitas empresas, informações importantes estão
+            espalhadas entre planilhas, sistemas e controles individuais.
+          </p>
+
+          <p>
+            Em outras, existem diversos indicadores, mas não está claro quais
+            deles realmente ajudam a gestão a acompanhar os resultados,
+            identificar problemas e definir prioridades.
+          </p>
+
+          <p>
+            O resultado é uma organização que possui dados, mas ainda encontra
+            dificuldade para transformá-los em informação gerencial,
+            decisões e ações.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- COMO ATUAMOS -->
+    <section class="alt" id="como-atuamos">
+      <div class="container">
+
+        <div class="section-label">Áreas de atuação</div>
+
+        <h2>
+          Como a Praxis ajuda sua empresa
+        </h2>
+
+        <p class="intro">
+          A implantação de indicadores começa antes da construção de uma
+          planilha ou dashboard. Primeiro entendemos os objetivos, processos
+          e decisões que precisam ser apoiados pelos indicadores.
+        </p>
+
+        <div class="grid">
+
+          <div class="card">
+            <h3>Definição dos Indicadores</h3>
+            <p>
+              Identificação dos KPIs que realmente representam o desempenho
+              do processo, com critérios claros de medição, metas e
+              responsabilidades.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Estruturação dos Dados</h3>
+            <p>
+              Organização das informações necessárias para alimentar os
+              indicadores e aumentar a confiabilidade dos dados utilizados
+              pela gestão.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Metas e Critérios</h3>
+            <p>
+              Definição de metas, fórmulas, frequência de atualização,
+              responsáveis e critérios para interpretação dos resultados.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Dashboards e Controles</h3>
+            <p>
+              Estruturação de formas claras e objetivas de visualizar
+              tendências, desvios, prioridades e evolução dos resultados.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Rotina de Gestão</h3>
+            <p>
+              Definição de como os indicadores serão analisados, discutidos
+              e utilizados para orientar decisões e prioridades.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Planos de Ação</h3>
+            <p>
+              Transformação dos desvios identificados nos KPIs em ações,
+              responsáveis, prioridades e acompanhamento sistemático.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- TIPOS DE INDICADORES -->
+    <section>
+      <div class="container">
+
+        <div class="section-label">Aplicação prática</div>
+
+        <h2>
+          Indicadores que fazem sentido para a sua operação
+        </h2>
+
+        <p class="intro">
+          Cada empresa possui processos, desafios e objetivos diferentes.
+          Por isso, não trabalhamos com uma lista padrão de KPIs aplicada
+          indistintamente a todas as organizações.
+        </p>
+
+        <div class="grid">
+
+          <div class="card">
+            <h3>Produtividade e Eficiência</h3>
+            <p>
+              Indicadores para acompanhar utilização de recursos, capacidade,
+              ritmo operacional e eficiência dos processos.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Qualidade e Retrabalho</h3>
+            <p>
+              Monitoramento de falhas, desvios, perdas, retrabalhos e
+              recorrência de problemas.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Custos e Desperdícios</h3>
+            <p>
+              Métricas para tornar perdas visíveis e apoiar a identificação
+              de oportunidades de redução de custos.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Prazos e Nível de Serviço</h3>
+            <p>
+              Acompanhamento de cumprimento de prazos, tempos de atendimento,
+              entregas e desempenho do fluxo.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Processos e Projetos</h3>
+            <p>
+              Indicadores para acompanhar evolução, execução, entregas,
+              gargalos e resultados de processos e iniciativas.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Resultados Gerenciais</h3>
+            <p>
+              Estruturação de informações que permitam à liderança acompanhar
+              resultados e priorizar decisões com maior clareza.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- MÉTODO -->
+    <section class="alt">
+      <div class="container">
+
+        <div class="section-label">Abordagem Praxis</div>
+
+        <h2>
+          Do objetivo ao indicador e do indicador à ação
+        </h2>
+
+        <p class="intro">
+          Nossa abordagem conecta objetivos, processos, indicadores e melhoria
+          contínua para transformar medição em gestão.
+        </p>
+
+        <div class="steps">
+
+          <div class="step">
+            <span class="step-number">01</span>
+            <h3>Entender</h3>
+            <p>
+              Compreender objetivos, processos, problemas e necessidades da
+              gestão.
+            </p>
+          </div>
+
+          <div class="step">
+            <span class="step-number">02</span>
+            <h3>Definir</h3>
+            <p>
+              Identificar o que realmente precisa ser medido e quais KPIs
+              representam o desempenho.
+            </p>
+          </div>
+
+          <div class="step">
+            <span class="step-number">03</span>
+            <h3>Estruturar</h3>
+            <p>
+              Definir fórmulas, fontes de dados, metas, responsáveis e
+              periodicidade.
+            </p>
+          </div>
+
+          <div class="step">
+            <span class="step-number">04</span>
+            <h3>Visualizar</h3>
+            <p>
+              Organizar os resultados em controles e dashboards de fácil
+              interpretação.
+            </p>
+          </div>
+
+          <div class="step">
+            <span class="step-number">05</span>
+            <h3>Gerenciar</h3>
+            <p>
+              Criar uma rotina de acompanhamento, análise de resultados e
+              identificação de desvios.
+            </p>
+          </div>
+
+          <div class="step">
+            <span class="step-number">06</span>
+            <h3>Melhorar</h3>
+            <p>
+              Transformar desvios em prioridades, decisões e planos de ação.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- RESULTADOS -->
+    <section>
+      <div class="container">
+
+        <div class="section-label">Resultados</div>
+
+        <h2>
+          Mais do que indicadores: uma rotina de gestão
+        </h2>
+
+        <p class="intro">
+          Um KPI isolado não melhora uma empresa. O resultado aparece quando
+          os indicadores fazem parte de uma rotina de gestão com objetivos
+          claros, responsáveis, análise de desvios e acompanhamento das ações.
+        </p>
+
+        <div class="results">
+
+          <div class="result-item">
+            <strong>Maior visibilidade dos resultados</strong>
+            Informações organizadas para compreender rapidamente o desempenho
+            dos processos.
+          </div>
+
+          <div class="result-item">
+            <strong>Decisões mais consistentes</strong>
+            Dados e indicadores utilizados como suporte para análise e
+            priorização.
+          </div>
+
+          <div class="result-item">
+            <strong>Desvios identificados mais cedo</strong>
+            Acompanhamento sistemático para detectar problemas antes que se
+            tornem maiores.
+          </div>
+
+          <div class="result-item">
+            <strong>Responsabilidades mais claras</strong>
+            Definição de quem acompanha cada indicador e responde pelos
+            resultados.
+          </div>
+
+          <div class="result-item">
+            <strong>Planos de ação conectados aos resultados</strong>
+            Indicadores utilizados para orientar prioridades e acompanhar a
+            eficácia das ações.
+          </div>
+
+          <div class="result-item">
+            <strong>Base para melhoria contínua</strong>
+            Resultados mensurados permitem avaliar se as mudanças implantadas
+            estão produzindo os efeitos esperados.
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- PROBLEMAS -->
+    <section class="alt">
+      <div class="container">
+
+        <div class="section-label">Quando podemos ajudar</div>
+
+        <h2>
+          Sua empresa reconhece algum desses problemas?
+        </h2>
+
+        <div class="issues">
+
+          <div class="issue">
+            <h3>Muitas planilhas e pouca informação</h3>
+            <p>
+              Existem diversos controles, mas ainda é difícil compreender
+              rapidamente o desempenho da operação.
+            </p>
+          </div>
+
+          <div class="issue">
+            <h3>Indicadores demais</h3>
+            <p>
+              A organização mede muitas coisas, porém poucos indicadores são
+              realmente utilizados para orientar decisões.
+            </p>
+          </div>
+
+          <div class="issue">
+            <h3>KPIs sem metas claras</h3>
+            <p>
+              Os números são acompanhados, mas não existem referências claras
+              para avaliar se o resultado é adequado.
+            </p>
+          </div>
+
+          <div class="issue">
+            <h3>Dados sem responsáveis</h3>
+            <p>
+              Não está claro quem deve atualizar, analisar ou responder pelo
+              desempenho de cada indicador.
+            </p>
+          </div>
+
+          <div class="issue">
+            <h3>Reuniões baseadas em percepção</h3>
+            <p>
+              Discussões consomem tempo porque não existe uma visão objetiva e
+              compartilhada sobre os resultados.
+            </p>
+          </div>
+
+          <div class="issue">
+            <h3>Indicadores sem plano de ação</h3>
+            <p>
+              Desvios são identificados, mas não se transformam de maneira
+              consistente em ações, responsáveis e acompanhamento.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- LOCAL SEO -->
+    <section>
+      <div class="container">
+
+        <div class="section-label">Atendimento regional</div>
+
+        <h2>
+          Consultoria em Indicadores e KPIs na região de Campinas
+        </h2>
+
+        <div class="intro">
+
+          <p>
+            A Praxis Group atende empresas em Campinas, Valinhos, Vinhedo,
+            Louveira e Itatiba, apoiando projetos de indicadores de desempenho,
+            KPIs, controles gerenciais, gestão da rotina e melhoria de
+            processos.
+          </p>
+
+          <p>
+            Projetos e treinamentos também podem ser desenvolvidos para
+            empresas localizadas em outras regiões do Brasil, de acordo com a
+            necessidade e o formato da iniciativa.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- LINKS INTERNOS -->
+    <section class="related">
+      <div class="container">
+
+        <div class="section-label">Soluções relacionadas</div>
+
+        <h2>
+          Indicadores ganham valor quando estão conectados aos processos
+        </h2>
+
+        <p class="intro">
+          A gestão por indicadores pode revelar gargalos, desperdícios,
+          variações e oportunidades que exigem atuação direta nos processos e
+          na performance operacional.
+        </p>
+
+        <div class="related-grid">
+
+          <div class="related-card">
+
+            <h3>Gestão de Processos</h3>
+
+            <p>
+              Quando os indicadores mostram retrabalho, gargalos, falta de
+              padronização ou responsabilidades pouco claras, a organização
+              dos processos pode ser o próximo passo.
+            </p>
+
+            <a href="/gestao-de-processos/">
+              Conhecer Gestão de Processos →
+            </a>
+
+          </div>
+
+          <div class="related-card">
+
+            <h3>Excelência Operacional</h3>
+
+            <p>
+              Quando o desafio envolve produtividade, redução de perdas,
+              estabilidade dos processos e melhoria contínua, os indicadores
+              tornam-se uma base essencial para a gestão da performance.
+            </p>
+
+            <a href="/excelencia-operacional/">
+              Conhecer Excelência Operacional →
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CTA FINAL -->
+    <section class="cta">
+      <div class="container">
+
+        <h2>
+          Sua empresa precisa ter mais controle sobre os resultados?
+        </h2>
+
+        <p>
+          A Praxis Group pode ajudar sua empresa a definir os indicadores
+          certos, estruturar controles e criar uma rotina de gestão orientada
+          a resultados. Podemos começar por um processo, uma área ou uma
+          necessidade específica.
+        </p>
+
+        <a
+          class="btn btn-primary"
+          href="https://wa.me/5519991279103"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Conversar com a Praxis pelo WhatsApp
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+
+      <div class="footer-brand">
+        <strong>PRAXIS GROUP</strong>
+        <span>Treinamento Profissional e Gerencial Ltda.</span>
+      </div>
+
+      <nav class="footer-links" aria-label="Links do rodapé">
+
+        <a href="/">
+          Início
+        </a>
+
+        <a href="/#solucoes">
+          Soluções
+        </a>
+
+        <a href="/#treinamentos">
+          Treinamentos
+        </a>
+
+        <a
+          href="https://www.linkedin.com/company/praxisgp/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          href="https://www.instagram.com/praxis_gp/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+
+      </nav>
+
+      <div class="copyright">
+        © 2026 Praxis Group. Todos os direitos reservados.
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
