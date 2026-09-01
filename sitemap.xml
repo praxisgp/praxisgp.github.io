@@ -9,19 +9,25 @@
   </url>
 
   <url>
-    <loc>https://praxisgp.com.br/excelencia-operacional/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
     <loc>https://praxisgp.com.br/gestao-de-processos/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
+    <loc>https://praxisgp.com.br/excelencia-operacional/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
     <loc>https://praxisgp.com.br/indicadores-kpis/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://praxisgp.com.br/treinamentos-corporativos/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
