@@ -117,9 +117,9 @@
     }
 
 
-    .eyebrow {
+        .eyebrow {
       display: inline-block;
-      color: var(--coral);
+      color: var(--azul-medio);
       font-size: 0.85rem;
       font-weight: 700;
       text-transform: uppercase;
@@ -129,15 +129,15 @@
 
 
     .hero {
-      background:
-        linear-gradient(
-          135deg,
-          var(--azul-escuro),
-          var(--azul-medio)
-        );
-
-      color: var(--branco);
+      background: var(--fundo-claro);
+      color: var(--texto);
       padding: 100px 0 90px;
+    }
+
+
+    .hero-content {
+      border-left: 5px solid var(--coral);
+      padding-left: 36px;
     }
 
 
@@ -145,6 +145,7 @@
       max-width: 900px;
       font-size: clamp(2.2rem, 5vw, 4rem);
       margin-bottom: 22px;
+      color: var(--azul-escuro);
     }
 
 
@@ -154,16 +155,15 @@
       font-weight: 500;
       line-height: 1.4;
       margin-bottom: 18px;
-      color: var(--branco);
+      color: var(--azul-medio);
     }
 
 
     .hero p {
       max-width: 820px;
       font-size: 1.08rem;
-      color: var(--off-white);
+      color: var(--texto);
     }
-
 
     .buttons {
       display: flex;
@@ -193,9 +193,14 @@
     }
 
 
-    .btn-light {
-      border: 1px solid rgba(255, 255, 255, 0.65);
-      color: var(--branco);
+        .btn-light {
+      border: 1px solid var(--azul-medio);
+      color: var(--azul-escuro);
+      background: transparent;
+    }
+
+    .btn-light:hover {
+      background: var(--off-white);
     }
 
 
@@ -490,7 +495,7 @@
 
   <header class="hero">
 
-    <div class="container">
+    <div class="container hero-content">
 
       <span class="eyebrow">
         Treinamentos • Desenvolvimento Profissional • In-Company
