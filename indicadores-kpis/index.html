@@ -20,21 +20,27 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
+
   <meta
     property="og:title"
     content="Indicadores e KPIs para Empresas | Praxis Group"
   >
+
   <meta
     property="og:description"
     content="Estruture indicadores de desempenho, KPIs, dashboards e rotinas de gestão para transformar dados em decisões e resultados."
   >
+
   <meta
     property="og:url"
     content="https://praxisgp.com.br/indicadores-kpis/"
   >
+
   <meta property="og:site_name" content="Praxis Group">
 
+
   <style>
+
     :root {
       --azul-escuro: #111D66;
       --azul-medio: #454F74;
@@ -73,46 +79,57 @@
       margin: 0 auto;
     }
 
+
+    /* HERO */
+
     .hero {
-  background: var(--fundo-claro);
-  color: var(--texto);
-  padding: 92px 0 88px;
-  border-left: 5px solid var(--coral);
-}
+      background: var(--fundo-claro);
+      color: var(--texto);
+      padding: 92px 0 88px;
+    }
 
-.eyebrow {
-  display: inline-block;
-  color: var(--azul-medio);
-  font-size: 0.88rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 18px;
-}
+    .hero-content {
+      border-left: 5px solid var(--coral);
+      padding-left: 36px;
+    }
 
-.hero h1 {
-  max-width: 900px;
-  font-size: clamp(2.3rem, 5vw, 4rem);
-  line-height: 1.08;
-  margin-bottom: 22px;
-  color: var(--azul-escuro);
-}
+    .eyebrow {
+      display: inline-block;
+      color: var(--azul-medio);
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 18px;
+    }
 
-.hero h2 {
-  max-width: 850px;
-  font-size: clamp(1.25rem, 2.6vw, 1.75rem);
-  font-weight: 500;
-  line-height: 1.4;
-  margin-bottom: 18px;
-  color: var(--azul-medio);
-}
+    .hero h1 {
+      max-width: 900px;
+      font-size: clamp(2.3rem, 5vw, 4rem);
+      line-height: 1.08;
+      margin-bottom: 22px;
+      color: var(--azul-escuro);
+    }
 
-.hero p {
-  max-width: 850px;
-  font-size: 1.08rem;
-  color: var(--texto);
-  margin-bottom: 32px;
-}
+    .hero h2 {
+      max-width: 850px;
+      font-size: clamp(1.25rem, 2.6vw, 1.75rem);
+      font-weight: 500;
+      line-height: 1.4;
+      margin-bottom: 18px;
+      color: var(--azul-medio);
+    }
+
+    .hero p {
+      max-width: 850px;
+      font-size: 1.08rem;
+      color: var(--texto);
+      margin-bottom: 32px;
+    }
+
+
+    /* BOTÕES */
+
     .buttons {
       display: flex;
       gap: 14px;
@@ -139,13 +156,17 @@
     }
 
     .btn-secondary {
-      border: 1px solid rgba(255, 255, 255, 0.7);
-      color: var(--branco);
+      border: 1px solid var(--azul-medio);
+      color: var(--azul-escuro);
+      background: transparent;
     }
 
     .btn-secondary:hover {
-      background: rgba(255, 255, 255, 0.08);
+      background: var(--off-white);
     }
+
+
+    /* SEÇÕES */
 
     section {
       padding: 78px 0;
@@ -186,6 +207,9 @@
       font-size: 1.05rem;
     }
 
+
+    /* CARDS */
+
     .grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -204,6 +228,9 @@
     .card p {
       color: #4E5567;
     }
+
+
+    /* MÉTODO */
 
     .steps {
       display: grid;
@@ -225,6 +252,9 @@
       margin-bottom: 8px;
     }
 
+
+    /* RESULTADOS */
+
     .results {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -244,6 +274,9 @@
       margin-bottom: 5px;
     }
 
+
+    /* PROBLEMAS */
+
     .issues {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -255,6 +288,9 @@
       border-bottom: 1px solid var(--borda);
       padding-bottom: 20px;
     }
+
+
+    /* SOLUÇÕES RELACIONADAS */
 
     .related {
       background: var(--azul-escuro);
@@ -298,6 +334,9 @@
       text-decoration: none;
     }
 
+
+    /* CTA */
+
     .cta {
       text-align: center;
       background: var(--fundo-claro);
@@ -308,6 +347,9 @@
       margin: 0 auto 28px;
       font-size: 1.05rem;
     }
+
+
+    /* FOOTER */
 
     footer {
       background: #0C154F;
@@ -358,16 +400,26 @@
       font-weight: 700;
     }
 
+
+    /* RESPONSIVO */
+
     @media (max-width: 850px) {
+
       .grid,
       .steps {
         grid-template-columns: repeat(2, 1fr);
       }
+
     }
 
     @media (max-width: 640px) {
+
       .hero {
         padding: 68px 0 64px;
+      }
+
+      .hero-content {
+        padding-left: 22px;
       }
 
       section {
@@ -390,10 +442,14 @@
         width: 100%;
         text-align: center;
       }
+
     }
+
   </style>
 
+
   <!-- Schema JSON-LD -->
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -445,15 +501,20 @@
     ]
   }
   </script>
+
 </head>
+
 
 <body>
 
   <main>
 
+
     <!-- HERO -->
+
     <section class="hero">
-      <div class="container">
+
+      <div class="container hero-content">
 
         <span class="eyebrow">
           Indicadores • KPIs • Gestão de Resultados
@@ -495,14 +556,19 @@
         </div>
 
       </div>
+
     </section>
 
 
     <!-- PROBLEMA -->
+
     <section>
+
       <div class="container">
 
-        <div class="section-label">Gestão por indicadores</div>
+        <div class="section-label">
+          Gestão por indicadores
+        </div>
 
         <h2>
           Sua empresa mede o que realmente importa?
@@ -531,14 +597,19 @@
         </div>
 
       </div>
+
     </section>
 
 
     <!-- COMO ATUAMOS -->
+
     <section class="alt" id="como-atuamos">
+
       <div class="container">
 
-        <div class="section-label">Áreas de atuação</div>
+        <div class="section-label">
+          Áreas de atuação
+        </div>
 
         <h2>
           Como a Praxis ajuda sua empresa
@@ -553,66 +624,106 @@
         <div class="grid">
 
           <div class="card">
-            <h3>Definição dos Indicadores</h3>
+
+            <h3>
+              Definição dos Indicadores
+            </h3>
+
             <p>
               Identificação dos KPIs que realmente representam o desempenho
               do processo, com critérios claros de medição, metas e
               responsabilidades.
             </p>
+
           </div>
 
+
           <div class="card">
-            <h3>Estruturação dos Dados</h3>
+
+            <h3>
+              Estruturação dos Dados
+            </h3>
+
             <p>
               Organização das informações necessárias para alimentar os
               indicadores e aumentar a confiabilidade dos dados utilizados
               pela gestão.
             </p>
+
           </div>
 
+
           <div class="card">
-            <h3>Metas e Critérios</h3>
+
+            <h3>
+              Metas e Critérios
+            </h3>
+
             <p>
               Definição de metas, fórmulas, frequência de atualização,
               responsáveis e critérios para interpretação dos resultados.
             </p>
+
           </div>
 
+
           <div class="card">
-            <h3>Dashboards e Controles</h3>
+
+            <h3>
+              Dashboards e Controles
+            </h3>
+
             <p>
               Estruturação de formas claras e objetivas de visualizar
               tendências, desvios, prioridades e evolução dos resultados.
             </p>
+
           </div>
 
+
           <div class="card">
-            <h3>Rotina de Gestão</h3>
+
+            <h3>
+              Rotina de Gestão
+            </h3>
+
             <p>
               Definição de como os indicadores serão analisados, discutidos
               e utilizados para orientar decisões e prioridades.
             </p>
+
           </div>
 
+
           <div class="card">
-            <h3>Planos de Ação</h3>
+
+            <h3>
+              Planos de Ação
+            </h3>
+
             <p>
               Transformação dos desvios identificados nos KPIs em ações,
               responsáveis, prioridades e acompanhamento sistemático.
             </p>
+
           </div>
 
         </div>
 
       </div>
+
     </section>
 
 
     <!-- TIPOS DE INDICADORES -->
+
     <section>
+
       <div class="container">
 
-        <div class="section-label">Aplicação prática</div>
+        <div class="section-label">
+          Aplicação prática
+        </div>
 
         <h2>
           Indicadores que fazem sentido para a sua operação
@@ -627,64 +738,104 @@
         <div class="grid">
 
           <div class="card">
-            <h3>Produtividade e Eficiência</h3>
+
+            <h3>
+              Produtividade e Eficiência
+            </h3>
+
             <p>
               Indicadores para acompanhar utilização de recursos, capacidade,
               ritmo operacional e eficiência dos processos.
             </p>
+
           </div>
 
+
           <div class="card">
-            <h3>Qualidade e Retrabalho</h3>
+
+            <h3>
+              Qualidade e Retrabalho
+            </h3>
+
             <p>
               Monitoramento de falhas, desvios, perdas, retrabalhos e
               recorrência de problemas.
             </p>
+
           </div>
 
+
           <div class="card">
-            <h3>Custos e Desperdícios</h3>
+
+            <h3>
+              Custos e Desperdícios
+            </h3>
+
             <p>
               Métricas para tornar perdas visíveis e apoiar a identificação
               de oportunidades de redução de custos.
             </p>
+
           </div>
 
+
           <div class="card">
-            <h3>Prazos e Nível de Serviço</h3>
+
+            <h3>
+              Prazos e Nível de Serviço
+            </h3>
+
             <p>
               Acompanhamento de cumprimento de prazos, tempos de atendimento,
               entregas e desempenho do fluxo.
             </p>
+
           </div>
 
+
           <div class="card">
-            <h3>Processos e Projetos</h3>
+
+            <h3>
+              Processos e Projetos
+            </h3>
+
             <p>
               Indicadores para acompanhar evolução, execução, entregas,
               gargalos e resultados de processos e iniciativas.
             </p>
+
           </div>
 
+
           <div class="card">
-            <h3>Resultados Gerenciais</h3>
+
+            <h3>
+              Resultados Gerenciais
+            </h3>
+
             <p>
               Estruturação de informações que permitam à liderança acompanhar
               resultados e priorizar decisões com maior clareza.
             </p>
+
           </div>
 
         </div>
 
       </div>
+
     </section>
 
 
     <!-- MÉTODO -->
+
     <section class="alt">
+
       <div class="container">
 
-        <div class="section-label">Abordagem Praxis</div>
+        <div class="section-label">
+          Abordagem Praxis
+        </div>
 
         <h2>
           Do objetivo ao indicador e do indicador à ação
@@ -698,69 +849,127 @@
         <div class="steps">
 
           <div class="step">
-            <span class="step-number">01</span>
-            <h3>Entender</h3>
+
+            <span class="step-number">
+              01
+            </span>
+
+            <h3>
+              Entender
+            </h3>
+
             <p>
               Compreender objetivos, processos, problemas e necessidades da
               gestão.
             </p>
+
           </div>
 
+
           <div class="step">
-            <span class="step-number">02</span>
-            <h3>Definir</h3>
+
+            <span class="step-number">
+              02
+            </span>
+
+            <h3>
+              Definir
+            </h3>
+
             <p>
               Identificar o que realmente precisa ser medido e quais KPIs
               representam o desempenho.
             </p>
+
           </div>
 
+
           <div class="step">
-            <span class="step-number">03</span>
-            <h3>Estruturar</h3>
+
+            <span class="step-number">
+              03
+            </span>
+
+            <h3>
+              Estruturar
+            </h3>
+
             <p>
               Definir fórmulas, fontes de dados, metas, responsáveis e
               periodicidade.
             </p>
+
           </div>
 
+
           <div class="step">
-            <span class="step-number">04</span>
-            <h3>Visualizar</h3>
+
+            <span class="step-number">
+              04
+            </span>
+
+            <h3>
+              Visualizar
+            </h3>
+
             <p>
               Organizar os resultados em controles e dashboards de fácil
               interpretação.
             </p>
+
           </div>
 
+
           <div class="step">
-            <span class="step-number">05</span>
-            <h3>Gerenciar</h3>
+
+            <span class="step-number">
+              05
+            </span>
+
+            <h3>
+              Gerenciar
+            </h3>
+
             <p>
               Criar uma rotina de acompanhamento, análise de resultados e
               identificação de desvios.
             </p>
+
           </div>
 
+
           <div class="step">
-            <span class="step-number">06</span>
-            <h3>Melhorar</h3>
+
+            <span class="step-number">
+              06
+            </span>
+
+            <h3>
+              Melhorar
+            </h3>
+
             <p>
               Transformar desvios em prioridades, decisões e planos de ação.
             </p>
+
           </div>
 
         </div>
 
       </div>
+
     </section>
 
 
     <!-- RESULTADOS -->
+
     <section>
+
       <div class="container">
 
-        <div class="section-label">Resultados</div>
+        <div class="section-label">
+          Resultados
+        </div>
 
         <h2>
           Mais do que indicadores: uma rotina de gestão
@@ -775,52 +984,92 @@
         <div class="results">
 
           <div class="result-item">
-            <strong>Maior visibilidade dos resultados</strong>
+
+            <strong>
+              Maior visibilidade dos resultados
+            </strong>
+
             Informações organizadas para compreender rapidamente o desempenho
             dos processos.
+
           </div>
 
+
           <div class="result-item">
-            <strong>Decisões mais consistentes</strong>
+
+            <strong>
+              Decisões mais consistentes
+            </strong>
+
             Dados e indicadores utilizados como suporte para análise e
             priorização.
+
           </div>
 
+
           <div class="result-item">
-            <strong>Desvios identificados mais cedo</strong>
+
+            <strong>
+              Desvios identificados mais cedo
+            </strong>
+
             Acompanhamento sistemático para detectar problemas antes que se
             tornem maiores.
+
           </div>
 
+
           <div class="result-item">
-            <strong>Responsabilidades mais claras</strong>
+
+            <strong>
+              Responsabilidades mais claras
+            </strong>
+
             Definição de quem acompanha cada indicador e responde pelos
             resultados.
+
           </div>
 
+
           <div class="result-item">
-            <strong>Planos de ação conectados aos resultados</strong>
+
+            <strong>
+              Planos de ação conectados aos resultados
+            </strong>
+
             Indicadores utilizados para orientar prioridades e acompanhar a
             eficácia das ações.
+
           </div>
 
+
           <div class="result-item">
-            <strong>Base para melhoria contínua</strong>
+
+            <strong>
+              Base para melhoria contínua
+            </strong>
+
             Resultados mensurados permitem avaliar se as mudanças implantadas
             estão produzindo os efeitos esperados.
+
           </div>
 
         </div>
 
       </div>
+
     </section>
 
 
     <!-- PROBLEMAS -->
+
     <section class="alt">
+
       <div class="container">
 
-        <div class="section-label">Quando podemos ajudar</div>
+        <div class="section-label">
+          Quando podemos ajudar
+        </div>
 
         <h2>
           Sua empresa reconhece algum desses problemas?
@@ -829,64 +1078,104 @@
         <div class="issues">
 
           <div class="issue">
-            <h3>Muitas planilhas e pouca informação</h3>
+
+            <h3>
+              Muitas planilhas e pouca informação
+            </h3>
+
             <p>
               Existem diversos controles, mas ainda é difícil compreender
               rapidamente o desempenho da operação.
             </p>
+
           </div>
 
+
           <div class="issue">
-            <h3>Indicadores demais</h3>
+
+            <h3>
+              Indicadores demais
+            </h3>
+
             <p>
               A organização mede muitas coisas, porém poucos indicadores são
               realmente utilizados para orientar decisões.
             </p>
+
           </div>
 
+
           <div class="issue">
-            <h3>KPIs sem metas claras</h3>
+
+            <h3>
+              KPIs sem metas claras
+            </h3>
+
             <p>
               Os números são acompanhados, mas não existem referências claras
               para avaliar se o resultado é adequado.
             </p>
+
           </div>
 
+
           <div class="issue">
-            <h3>Dados sem responsáveis</h3>
+
+            <h3>
+              Dados sem responsáveis
+            </h3>
+
             <p>
               Não está claro quem deve atualizar, analisar ou responder pelo
               desempenho de cada indicador.
             </p>
+
           </div>
 
+
           <div class="issue">
-            <h3>Reuniões baseadas em percepção</h3>
+
+            <h3>
+              Reuniões baseadas em percepção
+            </h3>
+
             <p>
               Discussões consomem tempo porque não existe uma visão objetiva e
               compartilhada sobre os resultados.
             </p>
+
           </div>
 
+
           <div class="issue">
-            <h3>Indicadores sem plano de ação</h3>
+
+            <h3>
+              Indicadores sem plano de ação
+            </h3>
+
             <p>
               Desvios são identificados, mas não se transformam de maneira
               consistente em ações, responsáveis e acompanhamento.
             </p>
+
           </div>
 
         </div>
 
       </div>
+
     </section>
 
 
     <!-- LOCAL SEO -->
+
     <section>
+
       <div class="container">
 
-        <div class="section-label">Atendimento regional</div>
+        <div class="section-label">
+          Atendimento regional
+        </div>
 
         <h2>
           Consultoria em Indicadores e KPIs na região de Campinas
@@ -910,14 +1199,19 @@
         </div>
 
       </div>
+
     </section>
 
 
     <!-- LINKS INTERNOS -->
+
     <section class="related">
+
       <div class="container">
 
-        <div class="section-label">Soluções relacionadas</div>
+        <div class="section-label">
+          Soluções relacionadas
+        </div>
 
         <h2>
           Indicadores ganham valor quando estão conectados aos processos
@@ -933,7 +1227,9 @@
 
           <div class="related-card">
 
-            <h3>Gestão de Processos</h3>
+            <h3>
+              Gestão de Processos
+            </h3>
 
             <p>
               Quando os indicadores mostram retrabalho, gargalos, falta de
@@ -947,9 +1243,12 @@
 
           </div>
 
+
           <div class="related-card">
 
-            <h3>Excelência Operacional</h3>
+            <h3>
+              Excelência Operacional
+            </h3>
 
             <p>
               Quando o desafio envolve produtividade, redução de perdas,
@@ -966,11 +1265,14 @@
         </div>
 
       </div>
+
     </section>
 
 
     <!-- CTA FINAL -->
+
     <section class="cta">
+
       <div class="container">
 
         <h2>
@@ -994,21 +1296,34 @@
         </a>
 
       </div>
+
     </section>
 
   </main>
 
 
   <!-- FOOTER -->
+
   <footer>
+
     <div class="container footer-content">
 
       <div class="footer-brand">
-        <strong>PRAXIS GROUP</strong>
-        <span>Treinamento Profissional e Gerencial Ltda.</span>
+
+        <strong>
+          PRAXIS GROUP
+        </strong>
+
+        <span>
+          Treinamento Profissional e Gerencial Ltda.
+        </span>
+
       </div>
 
-      <nav class="footer-links" aria-label="Links do rodapé">
+      <nav
+        class="footer-links"
+        aria-label="Links do rodapé"
+      >
 
         <a href="/">
           Início
@@ -1045,7 +1360,9 @@
       </div>
 
     </div>
+
   </footer>
 
 </body>
+
 </html>
