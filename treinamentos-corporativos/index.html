@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Treinamentos Corporativos e In-Company | Praxis Group
+  </title>
+
+  <meta
+    name="description"
+    content="Treinamentos corporativos e in-company em gestão, processos, indicadores e melhoria contínua, com conteúdo prático aplicado à realidade da sua empresa."
+  >
+
+  <link
+    rel="canonical"
+    href="https://praxisgp.com.br/treinamentos-corporativos/"
+  >
+
+  <meta
+    property="og:title"
+    content="Treinamentos Corporativos e In-Company | Praxis Group"
+  >
+
+  <meta
+    property="og:description"
+    content="Capacitação prática para profissionais e empresas em gestão, processos, indicadores e melhoria contínua."
+  >
+
+  <meta
+    property="og:url"
+    content="https://praxisgp.com.br/treinamentos-corporativos/"
+  >
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+
+  <style>
+
+    :root {
+      --azul-escuro: #111D66;
+      --azul-medio: #454F74;
+      --cinza-azulado: #9B9FAD;
+      --coral: #E5B1A2;
+      --off-white: #E7E5E4;
+      --branco: #FFFFFF;
+      --texto: #252A3A;
+      --fundo-claro: #F7F7F8;
+      --borda: #E2E4EA;
+    }
+
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--texto);
+      background: var(--branco);
+      line-height: 1.6;
+    }
+
+
+    a {
+      text-decoration: none;
+    }
+
+
+    .container {
+      width: min(1120px, 90%);
+      margin: 0 auto;
+    }
+
+
+    section {
+      padding: 80px 0;
+    }
+
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.2;
+    }
+
+
+    h2 {
+      color: var(--azul-escuro);
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      margin-bottom: 20px;
+    }
+
+
+    h3 {
+      color: var(--azul-escuro);
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+    }
+
+
+    p {
+      margin-bottom: 18px;
+    }
+
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--coral);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 18px;
+    }
+
+
+    .hero {
+      background:
+        linear-gradient(
+          135deg,
+          var(--azul-escuro),
+          var(--azul-medio)
+        );
+
+      color: var(--branco);
+      padding: 100px 0 90px;
+    }
+
+
+    .hero h1 {
+      max-width: 900px;
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      margin-bottom: 22px;
+    }
+
+
+    .hero h2 {
+      max-width: 850px;
+      font-size: clamp(1.25rem, 2.6vw, 1.75rem);
+      font-weight: 500;
+      line-height: 1.4;
+      margin-bottom: 18px;
+      color: var(--branco);
+    }
+
+
+    .hero p {
+      max-width: 820px;
+      font-size: 1.08rem;
+      color: var(--off-white);
+    }
+
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 6px;
+      font-weight: 700;
+      transition: 0.2s;
+    }
+
+
+    .btn-primary {
+      background: var(--coral);
+      color: var(--azul-escuro);
+    }
+
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+    }
+
+
+    .btn-light {
+      border: 1px solid rgba(255, 255, 255, 0.65);
+      color: var(--branco);
+    }
+
+
+    .section-intro {
+      max-width: 800px;
+      margin-bottom: 40px;
+    }
+
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+
+    .cards-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+
+    .card {
+      background: var(--branco);
+      border: 1px solid var(--borda);
+      border-radius: 10px;
+      padding: 28px;
+    }
+
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+
+    .light {
+      background: var(--fundo-claro);
+    }
+
+
+    .training-area {
+      border-top: 4px solid var(--coral);
+    }
+
+
+    .training-area a {
+      color: var(--azul-escuro);
+      font-weight: 700;
+    }
+
+
+    .available-training {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 32px;
+      align-items: center;
+      background: var(--branco);
+      border: 1px solid var(--borda);
+      border-radius: 12px;
+      padding: 36px;
+      margin-top: 30px;
+    }
+
+
+    .training-label {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--azul-medio);
+      background: var(--off-white);
+      padding: 7px 12px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+
+
+    .incompany {
+      background: var(--azul-escuro);
+      color: var(--branco);
+    }
+
+
+    .incompany h2,
+    .incompany h3 {
+      color: var(--branco);
+    }
+
+
+    .incompany p {
+      color: var(--off-white);
+    }
+
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 35px;
+    }
+
+
+    .step {
+      padding: 25px;
+      border-left: 3px solid var(--coral);
+    }
+
+
+    .step-number {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--coral);
+      margin-bottom: 10px;
+    }
+
+
+    .comparison {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      margin: 35px 0;
+    }
+
+
+    .comparison-card {
+      padding: 32px;
+      border-radius: 10px;
+      border: 1px solid var(--borda);
+    }
+
+
+    .related-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 25px;
+    }
+
+
+    .regional {
+      background: var(--fundo-claro);
+    }
+
+
+    .cta {
+      text-align: center;
+      background:
+        linear-gradient(
+          135deg,
+          var(--azul-escuro),
+          var(--azul-medio)
+        );
+
+      color: var(--branco);
+    }
+
+
+    .cta h2 {
+      color: var(--branco);
+      max-width: 850px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+    .cta p {
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+      color: var(--off-white);
+    }
+
+
+    footer {
+      background: #0A123D;
+      color: var(--off-white);
+      padding: 35px 0;
+    }
+
+
+    footer .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+
+    footer a {
+      color: var(--off-white);
+      margin-left: 16px;
+    }
+
+
+    @media (max-width: 900px) {
+
+      .cards,
+      .cards-4,
+      .steps {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+
+      .available-training {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+
+    @media (max-width: 650px) {
+
+      section {
+        padding: 60px 0;
+      }
+
+
+      .hero {
+        padding: 80px 0 70px;
+      }
+
+
+      .cards,
+      .cards-4,
+      .steps,
+      .comparison {
+        grid-template-columns: 1fr;
+      }
+
+
+      footer .container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+
+      footer a {
+        margin: 0 15px 0 0;
+      }
+
+    }
+
+  </style>
+
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Treinamentos Corporativos e In-Company",
+    "description": "Treinamentos corporativos e profissionais em gestão, processos, indicadores, melhoria contínua e ferramentas profissionais.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Praxis Group",
+      "url": "https://praxisgp.com.br/",
+      "sameAs": [
+        "https://www.linkedin.com/company/praxisgp/",
+        "https://www.instagram.com/praxis_gp/"
+      ]
+    },
+    "areaServed": [
+      "Campinas",
+      "Valinhos",
+      "Vinhedo",
+      "Louveira",
+      "Itatiba",
+      "Brasil"
+    ],
+    "serviceType": [
+      "Treinamentos Corporativos",
+      "Treinamentos In-Company",
+      "Treinamentos Profissionais",
+      "Gestão de Processos",
+      "Excelência Operacional",
+      "Indicadores e KPIs"
+    ]
+  }
+  </script>
+
+</head>
+
+
+<body>
+
+
+  <header class="hero">
+
+    <div class="container">
+
+      <span class="eyebrow">
+        Treinamentos • Desenvolvimento Profissional • In-Company
+      </span>
+
+      <h1>
+        Treinamentos Corporativos para Transformar Conhecimento em Prática
+      </h1>
+
+      <h2>
+        Capacitações profissionais e In-Company desenvolvidas para conectar
+        gestão, processos, indicadores e melhoria contínua aos desafios reais
+        das empresas.
+      </h2>
+
+      <p>
+        A Praxis desenvolve treinamentos com foco em aplicação prática,
+        combinando conceitos, exercícios, ferramentas e situações do ambiente
+        profissional para desenvolver competências que possam ser utilizadas
+        no dia a dia.
+      </p>
+
+      <div class="buttons">
+
+        <a
+          class="btn btn-primary"
+          href="https://wa.me/5519991279103"
+          target="_blank"
+          rel="noopener"
+        >
+          Solicitar uma proposta
+        </a>
+
+        <a
+          class="btn btn-light"
+          href="#treinamentos"
+        >
+          Conhecer os treinamentos
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+
+    <section>
+
+      <div class="container">
+
+        <div class="section-intro">
+
+          <span class="eyebrow">
+            Conhecimento aplicado
+          </span>
+
+          <h2>
+            Treinamentos que geram aplicação no dia a dia
+          </h2>
+
+          <p>
+            Conhecimento gera valor quando pode ser aplicado.
+            Por isso, os treinamentos Praxis são estruturados para ir além
+            da apresentação de conceitos.
+          </p>
+
+          <p>
+            Buscamos conectar conhecimento, ferramentas e situações práticas
+            para que profissionais e equipes compreendam não apenas o que fazer,
+            mas também como aplicar o aprendizado em seu ambiente de trabalho.
+          </p>
+
+        </div>
+
+
+        <div class="cards">
+
+          <div class="card">
+
+            <h3>
+              Conhecimento
+            </h3>
+
+            <p>
+              Fundamentos, conceitos e métodos necessários para compreender
+              o tema e tomar decisões com maior segurança.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <h3>
+              Aplicação
+            </h3>
+
+            <p>
+              Exercícios, estudos de caso, exemplos e ferramentas que aproximam
+              o conteúdo da realidade profissional.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <h3>
+              Resultado
+            </h3>
+
+            <p>
+              Desenvolvimento de competências que possam contribuir para
+              melhorar processos, controles, decisões e resultados.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="light">
+
+      <div class="container">
+
+        <div class="section-intro">
+
+          <span class="eyebrow">
+            Desenvolvimento de competências
+          </span>
+
+          <h2>
+            Áreas de treinamento
+          </h2>
+
+          <p>
+            Os treinamentos Praxis estão organizados em áreas conectadas
+            aos principais desafios de gestão e operação das empresas.
+          </p>
+
+        </div>
+
+
+        <div class="cards cards-4">
+
+          <div class="card training-area">
+
+            <h3>
+              Gestão e Processos
+            </h3>
+
+            <p>
+              Capacitações voltadas à organização, análise, padronização
+              e melhoria de processos.
+            </p>
+
+            <a href="/gestao-de-processos/">
+              Conhecer Gestão de Processos →
+            </a>
+
+          </div>
+
+
+          <div class="card training-area">
+
+            <h3>
+              Excelência Operacional e Melhoria Contínua
+            </h3>
+
+            <p>
+              Desenvolvimento de competências para identificação de perdas,
+              produtividade e solução estruturada de problemas.
+            </p>
+
+            <a href="/excelencia-operacional/">
+              Conhecer Excelência Operacional →
+            </a>
+
+          </div>
+
+
+          <div class="card training-area">
+
+            <h3>
+              Indicadores e Gestão de Desempenho
+            </h3>
+
+            <p>
+              Estruturação de indicadores e KPIs, análise de resultados,
+              acompanhamento e planos de ação.
+            </p>
+
+            <a href="/indicadores-kpis/">
+              Conhecer Indicadores e KPIs →
+            </a>
+
+          </div>
+
+
+          <div class="card training-area">
+
+            <h3>
+              Ferramentas Profissionais
+            </h3>
+
+            <p>
+              Capacitações voltadas a ferramentas que apoiam organização,
+              análise, documentação e produtividade profissional.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section id="treinamentos">
+
+      <div class="container">
+
+        <span class="eyebrow">
+          Treinamentos profissionais
+        </span>
+
+        <h2>
+          Treinamentos disponíveis
+        </h2>
+
+        <p class="section-intro">
+          Conheça os treinamentos desenvolvidos pela Praxis e escolha
+          a capacitação mais adequada aos seus objetivos profissionais
+          ou às necessidades da sua equipe.
+        </p>
+
+
+        <div class="available-training">
+
+          <div>
+
+            <span class="training-label">
+              Treinamento Online
+            </span>
+
+            <h3>
+              Documentação Técnica Profissional no Word
+            </h3>
+
+          </div>
+
+
+          <div>
+
+            <p>
+              Aprenda, passo a passo, a criar documentações técnicas
+              estruturadas, padronizadas e profissionais utilizando
+              os recursos do Microsoft Word.
+            </p>
+
+            <p>
+              Um treinamento voltado a analistas, engenheiros,
+              desenvolvedores e profissionais que precisam produzir
+              procedimentos, relatórios, manuais e outros documentos
+              técnicos com maior organização, clareza e qualidade profissional.
+            </p>
+
+            <a
+              class="btn btn-primary"
+              href="https://go.hotmart.com/I107274911G"
+              target="_blank"
+              rel="noopener"
+            >
+              Conhecer treinamento →
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="incompany">
+
+      <div class="container">
+
+        <span class="eyebrow">
+          Capacitação para empresas
+        </span>
+
+        <h2>
+          Treinamentos In-Company adaptados à realidade da sua empresa
+        </h2>
+
+        <p class="section-intro">
+          Cada organização possui processos, desafios e níveis de maturidade
+          diferentes. Por isso, os treinamentos In-Company da Praxis podem
+          ser estruturados de acordo com as necessidades da empresa
+          e o perfil dos participantes.
+        </p>
+
+
+        <div class="cards cards-4">
+
+          <div class="card">
+
+            <h3>
+              Conteúdo direcionado
+            </h3>
+
+            <p>
+              Definição dos temas e nível de profundidade de acordo
+              com os objetivos da empresa.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <h3>
+              Aplicação prática
+            </h3>
+
+            <p>
+              Exercícios, exemplos e situações que aproximam
+              o treinamento da realidade dos participantes.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <h3>
+              Desenvolvimento da equipe
+            </h3>
+
+            <p>
+              Capacitação direcionada às competências necessárias para
+              melhorar execução, gestão e tomada de decisão.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <h3>
+              Formato adequado
+            </h3>
+
+            <p>
+              Possibilidade de treinamentos remotos ou presenciais,
+              conforme escopo, localização e características do projeto.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="buttons">
+
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/5519991279103"
+            target="_blank"
+            rel="noopener"
+          >
+            Solicitar proposta In-Company
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <div class="container">
+
+        <span class="eyebrow">
+          Método Praxis
+        </span>
+
+        <h2>
+          Como estruturamos um treinamento In-Company
+        </h2>
+
+
+        <div class="steps">
+
+          <div class="step">
+
+            <div class="step-number">
+              01 — ENTENDER
+            </div>
+
+            <h3>
+              Entender
+            </h3>
+
+            <p>
+              Identificamos a necessidade da empresa, o público participante,
+              os desafios envolvidos e os resultados esperados.
+            </p>
+
+          </div>
+
+
+          <div class="step">
+
+            <div class="step-number">
+              02 — ESTRUTURAR
+            </div>
+
+            <h3>
+              Estruturar
+            </h3>
+
+            <p>
+              Definimos conteúdo, abordagem, carga horária,
+              exercícios e materiais adequados aos objetivos.
+            </p>
+
+          </div>
+
+
+          <div class="step">
+
+            <div class="step-number">
+              03 — CAPACITAR
+            </div>
+
+            <h3>
+              Capacitar
+            </h3>
+
+            <p>
+              Realizamos o treinamento combinando conceitos,
+              exemplos, exercícios e situações práticas.
+            </p>
+
+          </div>
+
+
+          <div class="step">
+
+            <div class="step-number">
+              04 — APLICAR
+            </div>
+
+            <h3>
+              Aplicar
+            </h3>
+
+            <p>
+              Direcionamos o aprendizado para sua utilização
+              no ambiente profissional.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="light">
+
+      <div class="container">
+
+        <span class="eyebrow">
+          Públicos
+        </span>
+
+        <h2>
+          Desenvolvimento para diferentes níveis da organização
+        </h2>
+
+        <p class="section-intro">
+          Os treinamentos podem ser estruturados para diferentes públicos,
+          considerando responsabilidades, experiência profissional
+          e objetivos de desenvolvimento.
+        </p>
+
+
+        <div class="cards cards-4">
+
+          <div class="card">
+
+            <h3>
+              Gestores e lideranças
+            </h3>
+
+            <p>
+              Competências para gestão, acompanhamento de resultados
+              e tomada de decisão.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <h3>
+              Supervisores e coordenadores
+            </h3>
+
+            <p>
+              Métodos para melhorar a gestão da rotina,
+              dos processos e das equipes.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <h3>
+              Analistas e engenheiros
+            </h3>
+
+            <p>
+              Desenvolvimento técnico e analítico aplicado
+              a processos, indicadores e melhoria.
+            </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <h3>
+              Equipes operacionais e administrativas
+            </h3>
+
+            <p>
+              Capacitação prática direcionada aos processos,
+              ferramentas e necessidades da operação.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <div class="container">
+
+        <span class="eyebrow">
+          Escolha da abordagem
+        </span>
+
+        <h2>
+          Treinamento ou consultoria: qual é a necessidade da sua empresa?
+        </h2>
+
+        <p class="section-intro">
+          Nem todo desafio organizacional exige a mesma abordagem.
+          Em alguns casos, o objetivo principal é desenvolver competências.
+          Em outros, é necessário diagnosticar, estruturar e implementar
+          melhorias diretamente na operação.
+        </p>
+
+
+        <div class="comparison">
+
+          <div class="comparison-card">
+
+            <h3>
+              Treinamento
+            </h3>
+
+            <p>
+              Indicado quando a empresa precisa desenvolver conhecimentos,
+              métodos e competências para que profissionais e equipes
+              possam aplicar novas práticas no trabalho.
+            </p>
+
+          </div>
+
+
+          <div class="comparison-card">
+
+            <h3>
+              Consultoria
+            </h3>
+
+            <p>
+              Indicada quando o desafio exige diagnóstico, estruturação,
+              implementação e acompanhamento de processos, indicadores
+              ou iniciativas de melhoria.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <p>
+          Dependendo da necessidade, treinamento e consultoria também
+          podem ser combinados em uma abordagem integrada.
+        </p>
+
+
+        <div class="related-links">
+
+          <a
+            class="btn btn-primary"
+            href="/gestao-de-processos/"
+          >
+            Gestão de Processos →
+          </a>
+
+          <a
+            class="btn btn-primary"
+            href="/excelencia-operacional/"
+          >
+            Excelência Operacional →
+          </a>
+
+          <a
+            class="btn btn-primary"
+            href="/indicadores-kpis/"
+          >
+            Indicadores e KPIs →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="regional">
+
+      <div class="container">
+
+        <span class="eyebrow">
+          Atuação
+        </span>
+
+        <h2>
+          Treinamentos para empresas em Campinas e região
+        </h2>
+
+        <p>
+          A Praxis atende empresas em Campinas, Valinhos, Vinhedo,
+          Louveira, Itatiba e região, com possibilidade de treinamentos
+          presenciais conforme escopo e localização.
+        </p>
+
+        <p>
+          Também realizamos treinamentos remotos, permitindo atender
+          empresas e profissionais em outras localidades do Brasil.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <section class="cta">
+
+      <div class="container">
+
+        <h2>
+          Desenvolva sua equipe com conhecimento que pode ser colocado em prática
+        </h2>
+
+        <p>
+          Fale com a Praxis para conhecer nossos treinamentos
+          ou estruturar uma capacitação In-Company alinhada
+          aos desafios e objetivos da sua empresa.
+        </p>
+
+        <a
+          class="btn btn-primary"
+          href="https://wa.me/5519991279103"
+          target="_blank"
+          rel="noopener"
+        >
+          Solicitar uma proposta
+        </a>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <footer>
+
+    <div class="container">
+
+      <div>
+        © Praxis Group
+      </div>
+
+      <div>
+
+        <a href="/">
+          Início
+        </a>
+
+        <a href="/#solucoes">
+          Soluções
+        </a>
+
+        <a href="/#treinamentos">
+          Treinamentos
+        </a>
+
+        <a
+          href="https://www.linkedin.com/company/praxisgp/"
+          target="_blank"
+          rel="noopener"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          href="https://www.instagram.com/praxis_gp/"
+          target="_blank"
+          rel="noopener"
+        >
+          Instagram
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+</body>
+
+</html>
